@@ -36,7 +36,7 @@ color: white;
 }
 
 .imagen1 {
-  background-image: url('../img/fondo2.jpeg');
+  background-image: url('../img/carousel1.jpg');
 
 }
 
@@ -46,12 +46,12 @@ color: white;
 }
 
 .carousel2 {
-  background-image: url('../img/fondo2.jpeg');
+  background-image: url('../img/carousel2.jpg');
 
 }
 
 .carousel3 {
-  background-image: url('../img/fondo3.jpeg');
+  background-image: url('../img/carousel3.jpg');
 
 }
 
