@@ -1,29 +1,61 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const items = document.querySelectorAll('.carousel-item');
-    let index = 0;
-  
-    function showNextItem() {
-      items[index].classList.remove('active');
-      index = (index + 1) % items.length;
-      items[index].classList.add('active');
-    }
-  
-    // Mostrar la primera imagen al cargar la página
-    items[index].classList.add('active');
-  
-    // Configurar el intervalo para cambiar de imagen cada 3 segundos
-    setInterval(showNextItem, 3000);
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $('#quienesomos').click(function(){
+      alert("Somos la mejor empresa de viajes")
   });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.contact-form');
-  
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevenir el envío del formulario por defecto
-  
-      // Aquí puedes agregar lógica para enviar el formulario, por ejemplo, usando Fetch API
-      // o simplemente mostrar un mensaje de éxito como este:
-      alert('¡Mensaje enviado! Gracias por contactarnos.');
-      form.reset(); // Opcional: limpiar el formulario después de enviar
-    });
+  $('#destacados').click(function(){
+      alert("Comparte en los mejores lugares de Chile")
   });
+  
+  $('#contactos').click(function(){
+      alert("Que esperas para ser parte de nosotros?")
+  });
+  
+  $('.titulo1').click(function(){
+      $('.texto1').toggle();
+  });
+  $('.titulo2').click(function(){
+      $('.texto2').toggle();
+  });
+  $('.titulo3').click(function(){
+      $('.texto3').toggle();
+  });
+  
+  $(".ocultar-mostrar").click(function(){
+      $(".ocultar-mostrar").slideToggle(1500); 
+      $(".ocultar-mostrar").toggle('show');
+  });
+  $(".ocultar-mostrar2").click(function(){
+      $(".ocultar-mostrar2").slideToggle(1500); 
+      $(".ocultar-mostrar2").toggle('show');
+  });
+  $(".ocultar-mostrar3").click(function(){
+      $(".ocultar-mostrar3").slideToggle(1500); 
+      $(".ocultar-mostrar3").toggle('show');
+  });
+  
+  $('.titulo4').click(function(){
+      $('.texto4').toggle();
+  })
+})
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      $('html,body').animate({
+          'scrollTop': $($(this).attr('href')).offset().top+'px'
+      }, 5000);
+      
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+$("#quienesomos").hover(function() {
+  $(this).css('cursor','pointer').attr('title', 'Los mejores viajes estan junto a nosotros');
+}, function() {
+  $(this).css('cursor','auto');
+});
