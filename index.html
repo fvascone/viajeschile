@@ -103,16 +103,16 @@
 <div class="container">
 <div class="row row-cols-1 row-cols-md-3 pt-5 test">
 	<div class="col-sm-12 col-md-3">
-<div class="card" style="width: 16rem;">
+<div class="card" style="width: 16rem; background-color: #1798c1;">
 	<img class="card-img-top" src="assets/img/card1.jpg" alt="Card image cap">
 	<div class="card-body">
-	  <h5 class="titulo1" class="card-title">Disfruta</h5>
+	  <h5 class="titulo1 " class="card-title">Disfruta</h5>
 	  <p class="texto1" class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus qui autem repudiandae mollitia quis minima, voluptate distinctio consequatur sit. Reprehenderit ducimus esse totam possimus minima autem pariatur magnam quaerat eos!</p>
 	  </div>
   </div>
 </div>	
 	<div class="col-sm-12 col-md-3">
-  <div class="card" style="width: 16rem;">
+  <div class="card" style="width: 16rem;  background-color: #1798c1;">
 	<img class="card-img-top" src="assets/img/card2.jpg" alt="Card image cap">
 	<div class="card-body">
 	  <h5 class="titulo2" class="card-title">Viaja</h5>
@@ -121,7 +121,7 @@
   </div>	
 </div>
 <div class="col-sm-12 col-md-3">
-	<div class="card" style="width: 16rem;">
+	<div class="card" style="width: 16rem;  background-color: #1798c1;">
 	  <img class="card-img-top" src="assets/img/card3.jpg" alt="Card image cap">
 	  <div class="card-body">
 		<h5 class="titulo3" class="card-title">Comparte</h5>
@@ -130,7 +130,7 @@
 	</div>
 </div>
 <div class="col-sm-12 col-md-3">
-		<div class="card" style="width: 16rem;">
+		<div class="card" style="width: 16rem;  background-color: #1798c1;">
 		  <img class="card-img-top" src="assets/img/card4.jpg" alt="Card image cap">
 		  <div class="card-body">
 			<h5 class="titulo4" class="card-title" >Sueña</h5>
@@ -142,16 +142,28 @@
 </div>
 </div>
 </div>
-<h3 id="contactos" class="contacto">Contacto</h3>
-<hr>
-<div id="contacto" class="typeform-widget" data-toggle="tooltip" data-placement="top" title="Contacta con nosotros" data-url="https://form.typeform.com/to/Xo1Q6yhz?typeform-medium=embed-snippet" style="width: 60%; height: 450px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-</section>
-<footer id="footer" class="container-fluid  d-md-block  bg-info section-icons fondo-footer">
+
+<section class="contacto">
 	<div class="container">
-	  <div class="row">
-		<div class="col-lg-4 pagos-creditos hidden-xs">
-		  <h4 id="viajes" class="pt-1 font-weight-bold" data-toggle="tooltip" data-placement="top" title="Viaja junto a con nosotros">VIAJES CHILE</h4>
+	  <h2>Contacto</h2>
+	  <form action="#" method="POST">
+		<div class="form-group">
+		  <label for="nombre"class="mensaje"></label>Nombre</label>
+		  <input type="text" id="nombre" name="nombre" required>
 		</div>
+		<div class="form-group">
+		  <label for="telefono"class="mensaje"></label>Teléfono:</label>
+		  <input type="tel" id="telefono" name="telefono" required>
+		</div>
+		<div class="form-group">
+		  <label for="mensaje" class="mensaje">Mensaje:</label>
+		  <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+		</div>
+		<button type="submit">Enviar</button>
+	  </form>
+	</div>
+  </section>
+
 		<div class="col-lg-8 text-right fa-iconos-credito pt-1 foot">
 		<a href="https://github.com/droflim/viajeschile" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
 		<a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
